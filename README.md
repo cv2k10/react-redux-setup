@@ -1,2 +1,2 @@
-- react code installed from npx create-react-app cra
-- removed extra sample files and logo.
+- modified codes from react-setup
+- added react-redux with counter sample code
