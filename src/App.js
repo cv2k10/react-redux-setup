@@ -1,10 +1,18 @@
 import './App.css';
 
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import Timer from './components/Timer';
+import allReducer from './reducers';
+
+const store = createStore(allReducer);
+
+
 function App() {
   return (
-    <div className="App">
-      Hello
-    </div>
+    <Provider store={store}>
+      <Timer />
+    </Provider>
   );
 }
 
