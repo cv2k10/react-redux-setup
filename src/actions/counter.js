@@ -17,9 +17,3 @@ export const reset = (num) => {
         type: 'RESET'
     }
 }
-
-export const signin = () => {
-    return {
-        type: 'SIGN_IN'
-    }
-}

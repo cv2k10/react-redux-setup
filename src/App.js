@@ -7,7 +7,6 @@ import allReducer from './reducers';
 
 const store = createStore(allReducer);
 
-
 function App() {
   return (
     <Provider store={store}>

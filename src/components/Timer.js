@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { increment, decrement, reset, signin } from '../actions';
-import counterReducer from '../reducers/counterReducer';
+import { increment, decrement, reset } from '../actions/counter';
+import {signin}  from "../actions/logged";
 
 function Timer() {
     const counter = useSelector(state => state.counter);
@@ -15,8 +15,9 @@ function Timer() {
       <button onClick={() => dispatch(decrement(1))}>-</button>
       <p><button onClick={() => dispatch(reset())}>Reset</button></p>
 
-      {isLogged? <p>Private login text</p>: null}
       <button onClick={() => dispatch(signin())}>Toggle sign up</button>
+      {isLogged? <p>Private login text</p>: null}
+      
     </div>
   );
 }
